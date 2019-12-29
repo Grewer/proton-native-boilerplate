@@ -1,0 +1,30 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "proton-hot-cli index.js",
+    "build": "node_modules/.bin/babel index.js -d bin/",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "proton-native": "latest"
+  },
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-0": "latest",
+    "electron-builder": "latest",
+    "proton-hot-cli": "^0.1.2"
+  },
+  "build": {
+    "framework": "proton",
+    "appId": "com.grewer.app",
+    "productName": "customName",
+    "mac": {
+      "identity": null
+    }
+  }
+}
