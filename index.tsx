@@ -1,9 +1,8 @@
 import React, { Component } from 'react'; // import from react
+import { App, render, Window } from 'proton-native';
+import MyApp from "./app.tsx"; // import the proton-native components
 
-import {render, Window, App, Text, Button, Box} from 'proton-native';
-import MyApp from "./app"; // import the proton-native components
-
-class Example extends Component {
+class Container extends Component {
   render() { // all Components must have a render method
     return (
       <App>
@@ -15,4 +14,4 @@ class Example extends Component {
   }
 }
 
-render(<Example />); // and finally render your main component
+render(<Container/>); // and finally render your main component

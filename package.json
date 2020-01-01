@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "proton-hot-cli index.js",
+    "start": "proton-hot-cli index.tsx",
+    "start-no-hot": "babel-node index.tsx",
     "build": "node_modules/.bin/babel index.js -d bin/",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
@@ -12,12 +13,16 @@
     "proton-native": "latest"
   },
   "devDependencies": {
+    "@types/node": "^13.1.2",
+    "@types/proton-native": "^1.1.5",
+    "@types/react": "^16.9.17",
     "babel-cli": "latest",
     "babel-preset-env": "latest",
     "babel-preset-react": "latest",
     "babel-preset-stage-0": "latest",
     "electron-builder": "latest",
-    "proton-hot-cli": "^0.1.2"
+    "proton-hot-cli": "^0.1.2",
+    "typescript": "^3.7.4"
   },
   "build": {
     "framework": "proton",
