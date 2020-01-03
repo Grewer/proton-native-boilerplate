@@ -1,7 +1,7 @@
-import React, { Component } from 'react'; // import from react
+import * as React from 'react'; // import from react
 import { Box, Button, Text } from 'proton-native'; // import the proton-native components
 
-class MyApp extends Component {
+class MyApp extends React.Component {
   render() { // all Components must have a render method
     return (
       <Box padded>

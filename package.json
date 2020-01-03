@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "proton-hot-cli index.tsx",
-    "start-no-hot": "babel-node index.tsx",
+    "start-no-hot": "ts-node index.tsx",
     "build": "node_modules/.bin/babel index.js -d bin/",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
@@ -22,6 +22,7 @@
     "babel-preset-stage-0": "latest",
     "electron-builder": "latest",
     "proton-hot-cli": "^0.1.2",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   },
   "build": {

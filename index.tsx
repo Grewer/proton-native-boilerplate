@@ -1,8 +1,8 @@
-import React, { Component } from 'react'; // import from react
+import * as React from "react";
 import { App, render, Window } from 'proton-native';
-import MyApp from "./app.tsx"; // import the proton-native components
+import MyApp from "./app"; // import the proton-native components
 
-class Container extends Component {
+class Container extends React.Component {
   render() { // all Components must have a render method
     return (
       <App>
