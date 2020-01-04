@@ -1,13 +1,13 @@
-import * as React from 'react'; // import from react
+import React from 'react'; // import from react
 import { Box, Button, Text } from 'proton-native'; // import the proton-native components
 
-class MyApp extends React.Component {
+class MyApp extends React.PureComponent {
   render() { // all Components must have a render method
     return (
       <Box padded>
-        <Text>tt2t</Text>
-        <Button>dmji</Button>
-        <Button>dmji2333</Button>
+        <Text>tt2wtSS</Text>
+        <Button>dmjiasd</Button>
+        <Button>1</Button>
       </Box>
     );
   }
