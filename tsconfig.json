@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "ES2017",
     "module": "esnext",
     "jsx": "react",
-    "lib": ["es2017"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "moduleResolution": "node",
     "outDir": "./packjs",
     "strict": true,
     "strictNullChecks": true,
-    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "allowSyntheticDefaultImports": true,
@@ -24,8 +27,5 @@
   "exclude": [
     "node_modules",
     "build"
-  ],
-  "include": [
-    "*.tsx"
   ]
 }

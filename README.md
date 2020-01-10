@@ -2,6 +2,11 @@
 
 > With framework proton-native, you can hot reload
 
+## proton disadvantage
+
+1. Does not support style
+2. Lack of documentation
+
 
 ## error log
 
