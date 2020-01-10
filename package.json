@@ -2,11 +2,14 @@
   "name": "demo",
   "version": "0.0.1",
   "private": true,
+  "main": "./packjs/index.js",
+  "author": "grewer",
+  "description": "a proton-natives application",
   "scripts": {
     "start": "proton-hot-cli index.tsx",
     "start-no-hot": "ts-node index.tsx",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "pack": "tsc && electron-builder --dir",
+    "dist": "tsc && electron-builder"
   },
   "dependencies": {
     "proton-native": "latest"
@@ -25,11 +28,13 @@
     "typescript": "^3.7.4"
   },
   "build": {
-    "framework": "proton",
+    "framework": "proton-native",
     "appId": "com.grewer.app",
-    "productName": "customName",
+    "productName": "grewer app",
     "mac": {
       "identity": null
-    }
+    },
+    "electronCompile": true,
+    "files": ["!**/*.tsx"]
   }
 }

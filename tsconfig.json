@@ -5,7 +5,7 @@
     "jsx": "react",
     "lib": ["es2017"],
     "moduleResolution": "node",
-    "outDir": "./build",
+    "outDir": "./packjs",
     "strict": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
@@ -19,8 +19,7 @@
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declaration": true
+    "emitDecoratorMetadata": true
   },
   "exclude": [
     "node_modules",
